@@ -1,19 +1,121 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Signed Work - NFTs, without a blockchain.</title>
+    <title>What is VRP? By Stateless Group</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
     <link rel="stylesheet" href="/assets/main.css" />
   </head>
 
   <body>
     <div id="wrapper">
-      <h1>Hi</h1>
+      <h1>What is VRP?</h1>
+      <p>A primer by <a href="https://stateless.group/">Stateless Group</a></p>
+      <p>
+        Variable Recurring Payments (VRPs) are a new addition to Open
+        Banking that allow a customer to safely connect services to their
+        bank account so that those services can make instant payments
+        automatically on their behalf.
+      </p>
+
+      <p>
+        VRPs are an alternative method to card payments that are safer and
+        more efficient. They enable innovation in payment UX, reduction in
+        processing fees, better control of risk, and the creation of new
+        types of services for customers involving the intelligent
+        programmatic movement of their money. Some example uses for VRP
+        are:
+      </p>
+
+      <ul>
+        <li>Automatic bill payments</li>
+        <li>“One click” payments</li>
+        <li>Frictionless payments at the point of sale</li>
+        <li>Automated savings and financial management (“Sweeping”)</li>
+      </ul>
+
+      <p>
+        VRP will be an unprecedented step change to the payments
+        landscape that will impact many businesses including retailers,
+        payments companies, fintechs, and banks.
+      </p>
+
+      <p>
+        If your company would like to stay ahead on VRP, Stateless Group
+        can help.<br>
+        You should reach out to
+        <a href="mailto:team@stateless.group">team@stateless.group</a>
+        for an intro call.
+      </p>
+      <h1>How does VRP work?</h1>
+      <p>
+        Essentially, VRP entails a customer leaving permission with their
+        bank for a third party service to be able to make bank transfers
+        on their behalf.
+      </p>
+
+      <p>There are 5 key steps to the VRP process:</p>
+
+      <h2>Step 1 - Agreeing consent</h2>
+      <p>
+        Setting up a VRP begins by the customer agreeing with the service
+        provider under what conditions they agree for payments to be made
+        on their behalf (“<strong>VRP Consent</strong>”). Those conditions restrict things
+        like the destination accounts they can send to, the amounts they
+        are able to move, the frequency with which payments can be made,
+        valid until date, etc. In VRP, we call those conditions
+        “<strong>Consent Parameters</strong>”.
+      </p>
+
+      <img src="/assets/agreeing-vrp-consent-parameters.png" >
+
+      <h2>Step 2 - Redirection to bank app</h2>
+      <p>
+        Once agreed, the service provider refers the customer to their
+        bank app with this consent information, so that the bank can
+        know under what conditions they should honour payment
+        instructions from the service provider for that customer.
+      </p>
+
+      <img src="/assets/redirection-to-bank-app.png" >
+
+      <h2>Step 3 - Strong Customer Authentication with bank</h2>
+      <p>
+        The bank displays the details of the consent to the customer and
+        securely authenticates them, confirming the customer agrees. The
+        bank records the agreed consent and creates an associated
+        <strong>access token</strong> for the service provider. The bank
+        then refers the customer back to the service provider with that
+        access token.
+      </p>
+
+      <img src="/assets/vrp-strong-customer-authentication.png" >
+
+      <h2>Step 4 - Redirection back to service provider app</h2>
+      <p>
+        The customer delivers the access token to the service provider,
+        which is then stored against the customer’s account for later
+        use. At this point, the “<strong>VRP consent setup</strong>” has
+        been completed.
+      </p>
+
+      <img src="/assets/vrp-redirect-to-pisp.png" >
+
+      <h2>Step 5 - Ongoing VRP Payments</h2>
+      <p>
+        From now on, the service provider can use the access token to
+        instruct transfers from the customer’s account on their behalf
+        (“<strong>VRP Payments</strong>”), provided the usage is within
+        the conditions of the agreed consent parameters. If the service
+        provider attempts to make a payment that would violate those
+        conditions in any way, the bank will reject the service
+        provider’s instruction.
+      </p>
+
+      <img src="/assets/ongoing-vrp-payments.png" >
     </div>
   </body>
 </html>
