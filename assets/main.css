@@ -1,0 +1,8 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-family: 'Courier Prime', monospace; }
+
+#wrapper { width: 70%; margin: 0 auto; }
+@media only screen and (max-width: 600px) {
+  #wrapper { width: 100%; }
+}
