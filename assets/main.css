@@ -6,7 +6,7 @@ body { margin: 0; }
 
 img { max-width:100%; max-height:100%; }
 
-.aside { padding-left: 2em; border-left: 1px solid; color: #999; }
+.aside { padding-left: 1em; border-left: 1px solid; color: #999; }
 
 #wrapper { padding: 1em; width: 70%; margin: 0 auto; max-width: 720px; }
 @media only screen and (max-width: 600px) {
